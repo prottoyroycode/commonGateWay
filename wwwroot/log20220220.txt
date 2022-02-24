@@ -1,0 +1,460 @@
+02/20/2022 10:03:18 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 10:03:18 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 10:03:18 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 10:03:18 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 10:03:18 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 10:03:19 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 259.9777ms
+02/20/2022 10:03:20 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 10:03:20 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 299.1415ms
+02/20/2022 10:19:29 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/ApiTest/createUser application/json 108
+02/20/2022 10:19:30 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 10:19:30 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)"'
+02/20/2022 10:19:30 +06:00[] -Message:Route matched with "{action = \"CreateUser\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Bkash_Service_API.Dtos.ApplicationUserDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/20/2022 10:19:32 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 10:19:35 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/20/2022 10:19:36 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/20/2022 10:19:37 +06:00[] -Message:Executed DbCommand ("122"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/20/2022 10:19:37 +06:00[] -Message:Executed DbCommand ("12"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ApplicationUser] ([Id], [ApiKey], [ApiSecret], [CreatedDate], [IsActive], [ModifiedDate], [Password], [Role], [UserId], [UserName], [client_UserID])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+02/20/2022 10:19:37 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5853.4119ms.
+02/20/2022 10:19:38 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Dtos.ApplicationUserDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 10:19:38 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)" in 7792.8932ms
+02/20/2022 10:19:38 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)"'
+02/20/2022 10:19:38 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/ApiTest/createUser application/json 108 - 200 - application/json;+charset=utf-8 8511.8071ms
+02/20/2022 10:21:44 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 10:21:44 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 10:21:44 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 10:21:44 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 10:21:45 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 10:21:45 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 251.8617ms
+02/20/2022 10:21:45 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 10:21:45 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.8173ms
+02/20/2022 10:22:21 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/ApiTest/createUser application/json 109
+02/20/2022 10:22:22 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 10:22:22 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)"'
+02/20/2022 10:22:22 +06:00[] -Message:Route matched with "{action = \"CreateUser\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Bkash_Service_API.Dtos.ApplicationUserDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/20/2022 10:22:24 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 10:22:28 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/20/2022 10:22:28 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/20/2022 10:22:30 +06:00[] -Message:Executed DbCommand ("460"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/20/2022 10:22:41 +06:00[] -Message:Executed DbCommand ("49"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ApplicationUser] ([Id], [ApiKey], [ApiSecret], [CreatedDate], [IsActive], [ModifiedDate], [Password], [Role], [UserId], [UserName], [client_UserID])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+02/20/2022 10:22:41 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 16842.2056ms.
+02/20/2022 10:22:41 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Dtos.ApplicationUserDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 10:22:41 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)" in 19024.4357ms
+02/20/2022 10:22:41 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)"'
+02/20/2022 10:22:41 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/ApiTest/createUser application/json 109 - 200 - application/json;+charset=utf-8 19645.2175ms
+02/20/2022 10:35:22 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 10:35:22 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 10:35:22 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 10:35:22 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 10:35:22 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 10:35:23 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 198.4641ms
+02/20/2022 10:35:23 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 10:35:23 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 176.1680ms
+02/20/2022 10:35:54 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/querySubscription application/json 24
+02/20/2022 10:35:54 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 10:35:54 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)"'
+02/20/2022 10:35:54 +06:00[] -Message:Route matched with "{action = \"QuerySubscriptionAndPaymentAfterCallBack\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QuerySubscriptionAndPaymentAfterCallBack(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QuerySubscriptionAndPaymentRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 10:35:56 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 10:35:58 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/20/2022 10:35:59 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/20/2022 10:36:00 +06:00[] -Message:Executed DbCommand ("117"ms) [Parameters=["@__subscriptionRequestId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsActive], [c].[ModifiedDate], [c].[RequestID], [c].[UserId], [c].[client_RedirectURL], [c].[client_UserID], [c].[errorCode], [c].[errorDescription], [c].[expirationTime], [c].[redirectURL], [c].[reference], [c].[subscriptionRequestId], [c].[timeStamp]
+FROM [CreateSubscriptionResponse_Bkash] AS [c]
+WHERE [c].[reference] = @__subscriptionRequestId_0"
+02/20/2022 10:36:01 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4458.6516ms.
+02/20/2022 10:36:01 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.BkashQuerySubscriptionAndPaymentDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 10:36:01 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)" in 6789.6994ms
+02/20/2022 10:36:01 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)"'
+02/20/2022 10:36:01 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/querySubscription application/json 24 - 200 - application/json;+charset=utf-8 7456.8589ms
+02/20/2022 10:48:42 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34
+02/20/2022 10:48:42 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 10:48:42 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 10:48:42 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 10:48:47 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 10:50:57 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 10:50:58 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 10:50:58 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 10:50:58 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 10:50:58 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 10:50:58 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 243.0348ms
+02/20/2022 10:50:58 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 10:50:58 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.4970ms
+02/20/2022 10:51:13 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34
+02/20/2022 10:51:13 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 10:51:13 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 10:51:13 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 10:51:17 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 10:51:47 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 30771.8057ms.
+02/20/2022 10:51:47 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+02/20/2022 10:51:47 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 34318.6155ms
+02/20/2022 10:51:47 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 10:51:47 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34 - 200 - application/json;+charset=utf-8 34978.2880ms
+02/20/2022 10:52:03 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 10:52:03 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 10:52:03 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 10:52:03 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 10:52:06 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 10:52:49 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 42970.5917ms.
+02/20/2022 10:52:49 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+02/20/2022 10:52:49 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 45868.6964ms
+02/20/2022 10:52:49 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 10:52:49 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 45880.3246ms
+02/20/2022 11:01:30 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:01:31 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:01:31 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:01:31 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:01:31 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:01:31 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 256.0722ms
+02/20/2022 11:01:32 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:01:32 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.9419ms
+02/20/2022 11:02:03 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:02:03 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:02:03 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:02:03 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:02:07 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:02:20 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 13000.9925ms.
+02/20/2022 11:02:20 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+02/20/2022 11:02:20 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 16530.6613ms
+02/20/2022 11:02:20 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:02:20 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 17370.3755ms
+02/20/2022 11:39:07 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:39:08 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:39:08 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:39:08 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:39:08 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:39:08 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 216.5086ms
+02/20/2022 11:39:09 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:39:09 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 186.0052ms
+02/20/2022 11:41:23 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34
+02/20/2022 11:41:24 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:41:24 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:41:24 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:41:32 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:41:55 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 22984.2234ms.
+02/20/2022 11:41:55 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:41:55 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 30724.2806ms
+02/20/2022 11:41:55 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:41:55 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34 - 200 - application/json;+charset=utf-8 31465.4482ms
+02/20/2022 11:42:09 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:42:09 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:42:09 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:42:09 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:42:12 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:42:31 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 19187.1569ms.
+02/20/2022 11:42:31 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:42:31 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 21895.5158ms
+02/20/2022 11:42:31 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:42:31 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 21919.1084ms
+02/20/2022 11:42:56 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:42:56 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:42:56 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:42:56 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:43:01 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:43:35 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 34303.2996ms.
+02/20/2022 11:43:35 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:43:35 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 39605.9671ms
+02/20/2022 11:43:35 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:43:35 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 39629.0305ms
+02/20/2022 11:46:38 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:46:39 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:46:39 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:46:39 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:46:39 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:46:39 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 229.6245ms
+02/20/2022 11:46:39 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:46:40 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.7155ms
+02/20/2022 11:46:50 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:46:51 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:46:51 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:46:51 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:46:54 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:47:28 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 33263.9887ms.
+02/20/2022 11:47:28 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:47:28 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 36635.9675ms
+02/20/2022 11:47:28 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:47:28 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 37499.2977ms
+02/20/2022 11:49:15 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:49:15 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:49:15 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:49:15 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:49:15 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:49:16 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 249.7958ms
+02/20/2022 11:49:16 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:49:16 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 355.8368ms
+02/20/2022 11:50:10 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:50:10 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:50:10 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:50:10 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:50:11 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:50:11 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 315.4934ms
+02/20/2022 11:50:11 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:50:11 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.2802ms
+02/20/2022 11:50:21 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:50:22 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:50:22 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:50:22 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:50:24 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:50:53 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 29020.721ms.
+02/20/2022 11:50:53 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:50:53 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 31098.9387ms
+02/20/2022 11:50:53 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:50:53 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 31861.3505ms
+02/20/2022 11:51:38 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:51:38 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:51:38 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:51:38 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:51:38 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:51:39 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 340.9018ms
+02/20/2022 11:51:39 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:51:39 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 337.1494ms
+02/20/2022 11:52:00 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:52:01 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:52:01 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:52:01 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:52:08 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:53:15 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 66796.6522ms.
+02/20/2022 11:53:15 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:53:15 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 74236.1415ms
+02/20/2022 11:53:15 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:53:15 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 74920.1024ms
+02/20/2022 11:55:00 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 11:55:01 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 11:55:01 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 11:55:01 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 11:55:01 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 11:55:01 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 289.7821ms
+02/20/2022 11:55:02 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 11:55:02 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.5170ms
+02/20/2022 11:55:17 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 11:55:18 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 11:55:18 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:55:18 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 11:55:21 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 11:56:02 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 41822.7982ms.
+02/20/2022 11:56:02 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 11:56:02 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 44526.1167ms
+02/20/2022 11:56:02 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 11:56:02 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 45233.1664ms
+02/20/2022 12:27:24 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 12:27:24 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 12:27:24 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 12:27:24 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 12:27:24 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 12:27:25 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 292.2674ms
+02/20/2022 12:27:25 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 12:27:25 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 331.8082ms
+02/20/2022 12:28:46 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 12:28:47 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 12:28:47 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 12:28:47 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 12:28:47 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 12:28:47 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 223.0650ms
+02/20/2022 12:28:47 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 12:28:47 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.0026ms
+02/20/2022 12:29:28 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/get-paymentlist application/json 23
+02/20/2022 12:29:29 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 12:29:29 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentList (Bkash_Service_API)"'
+02/20/2022 12:29:29 +06:00[] -Message:Route matched with "{action = \"GetPaymentList\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentList(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetPaymentListRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 12:29:31 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentList (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 12:29:53 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentList (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 21868.4407ms.
+02/20/2022 12:29:53 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[System.Collections.Generic.List`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetPaymentBySubscriptionIdResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+02/20/2022 12:29:53 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentList (Bkash_Service_API)" in 24487.9253ms
+02/20/2022 12:29:53 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentList (Bkash_Service_API)"'
+02/20/2022 12:29:53 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/get-paymentlist application/json 23 - 200 - application/json;+charset=utf-8 25157.3173ms
+02/20/2022 12:40:28 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34
+02/20/2022 12:40:28 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 12:40:28 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 12:40:28 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 12:40:29 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 12:40:30 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1004.4251ms.
+02/20/2022 12:40:30 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 12:40:30 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 2503.119ms
+02/20/2022 12:40:30 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 12:40:30 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 34 - 200 - application/json;+charset=utf-8 2547.2052ms
+02/20/2022 12:43:23 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33
+02/20/2022 12:43:23 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 12:43:23 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 12:43:23 +06:00[] -Message:Route matched with "{action = \"Refund\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Refund(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 12:43:26 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 12:43:27 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 925.5689ms.
+02/20/2022 12:43:27 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.RefundErrorResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 12:43:27 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)" in 4442.9974ms
+02/20/2022 12:43:27 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.Refund (Bkash_Service_API)"'
+02/20/2022 12:43:27 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/refund application/json 33 - 200 - application/json;+charset=utf-8 4464.9557ms
+02/20/2022 13:43:59 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 13:44:00 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 13:44:00 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 13:44:00 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 13:44:00 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 13:44:00 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 193.1774ms
+02/20/2022 13:44:00 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 13:44:00 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 252.7394ms
+02/20/2022 13:44:41 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23
+02/20/2022 13:44:41 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 13:44:41 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:44:41 +06:00[] -Message:Route matched with "{action = \"QueryBySubscriptionId\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QueryBySubscriptionId(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 13:44:45 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 13:44:47 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1433.9423ms.
+02/20/2022 13:44:47 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 13:44:47 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" in 5544.4045ms
+02/20/2022 13:44:47 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:44:51 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23 - 200 - application/json;+charset=utf-8 10300.1094ms
+02/20/2022 13:45:17 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23
+02/20/2022 13:45:18 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 13:45:18 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:45:18 +06:00[] -Message:Route matched with "{action = \"QueryBySubscriptionId\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QueryBySubscriptionId(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 13:45:20 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 13:46:14 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 54691.7337ms.
+02/20/2022 13:46:14 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 13:46:14 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" in 56825.7992ms
+02/20/2022 13:46:14 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:46:14 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23 - 200 - application/json;+charset=utf-8 56858.4967ms
+02/20/2022 13:46:17 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23
+02/20/2022 13:46:17 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 13:46:17 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:46:17 +06:00[] -Message:Route matched with "{action = \"QueryBySubscriptionId\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QueryBySubscriptionId(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 13:46:19 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 13:48:18 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 119100.256ms.
+02/20/2022 13:48:18 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 13:48:18 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" in 120886.3316ms
+02/20/2022 13:48:18 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:48:18 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23 - 200 - application/json;+charset=utf-8 120901.2066ms
+02/20/2022 13:49:20 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 13:49:21 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 13:49:21 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 13:49:21 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 13:49:21 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 13:49:21 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 237.0907ms
+02/20/2022 13:49:22 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 13:49:22 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 215.7898ms
+02/20/2022 13:50:02 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23
+02/20/2022 13:50:03 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 13:50:03 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:50:03 +06:00[] -Message:Route matched with "{action = \"QueryBySubscriptionId\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QueryBySubscriptionId(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 13:50:07 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 13:50:19 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11525.3335ms.
+02/20/2022 13:50:19 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QueryBySubscriptionIdResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 13:50:19 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)" in 15767.583ms
+02/20/2022 13:50:19 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QueryBySubscriptionId (Bkash_Service_API)"'
+02/20/2022 13:50:19 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/queryBySubscriptionId application/json 23 - 200 - application/json;+charset=utf-8 16354.4247ms
+02/20/2022 15:05:38 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 15:05:38 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 15:05:38 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 15:05:38 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 15:05:39 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 15:05:39 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 195.6188ms
+02/20/2022 15:05:39 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 15:05:39 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 179.3820ms
+02/20/2022 15:05:54 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 25
+02/20/2022 15:05:55 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 15:05:55 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:05:55 +06:00[] -Message:Route matched with "{action = \"SubscriptionListWitPaging\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubscriptionListWitPaging(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListPagingRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 15:05:59 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 15:06:31 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 32724.1672ms.
+02/20/2022 15:06:31 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+02/20/2022 15:06:31 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" in 36694.6615ms
+02/20/2022 15:06:31 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:06:31 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 25 - 200 - application/json;+charset=utf-8 37400.3289ms
+02/20/2022 15:09:07 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 25
+02/20/2022 15:09:07 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 15:09:07 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:09:07 +06:00[] -Message:Route matched with "{action = \"SubscriptionListWitPaging\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubscriptionListWitPaging(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListPagingRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 15:09:31 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 15:09:32 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 15:09:32 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 15:09:32 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 15:09:32 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 15:09:32 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 277.9715ms
+02/20/2022 15:09:33 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 15:09:33 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 257.9498ms
+02/20/2022 15:10:02 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 25
+02/20/2022 15:10:02 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 15:10:02 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:10:02 +06:00[] -Message:Route matched with "{action = \"SubscriptionListWitPaging\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubscriptionListWitPaging(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListPagingRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 15:10:06 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 15:16:56 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 15:16:57 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 15:16:57 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 15:16:57 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 15:16:57 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 15:16:58 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 353.0510ms
+02/20/2022 15:16:58 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 15:16:58 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 252.1098ms
+02/20/2022 15:18:13 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 25
+02/20/2022 15:18:14 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 15:18:14 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:18:14 +06:00[] -Message:Route matched with "{action = \"SubscriptionListWitPaging\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubscriptionListWitPaging(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListPagingRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 15:18:18 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 15:18:25 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 6916.0186ms.
+02/20/2022 15:18:25 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 15:18:25 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" in 11356.2224ms
+02/20/2022 15:18:25 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:18:25 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 25 - 200 - application/json;+charset=utf-8 11943.2589ms
+02/20/2022 15:18:43 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 26
+02/20/2022 15:18:43 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 15:18:43 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:18:43 +06:00[] -Message:Route matched with "{action = \"SubscriptionListWitPaging\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SubscriptionListWitPaging(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListPagingRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 15:18:45 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 15:18:47 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2091.9206ms.
+02/20/2022 15:18:47 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.SubscriptionListResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 15:18:47 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)" in 3291.0406ms
+02/20/2022 15:18:47 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.SubscriptionListWitPaging (Bkash_Service_API)"'
+02/20/2022 15:18:47 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/searchpaymentlist application/json 26 - 200 - application/json;+charset=utf-8 3329.2868ms
+02/20/2022 16:08:52 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 16:08:53 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 16:08:53 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 16:08:53 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 16:08:53 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 16:08:54 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 261.7267ms
+02/20/2022 16:08:54 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 16:08:54 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 203.8461ms
+02/20/2022 16:20:07 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/getPaymentSchedule application/json 71
+02/20/2022 16:20:08 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 16:20:08 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)"'
+02/20/2022 16:20:08 +06:00[] -Message:Route matched with "{action = \"GetPaymentSchedule\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentSchedule(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetScheduleRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 16:20:13 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 16:20:53 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 39893.4231ms.
+02/20/2022 16:20:53 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[System.Object, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+02/20/2022 16:20:53 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)" in 44972.175ms
+02/20/2022 16:20:53 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)"'
+02/20/2022 16:20:53 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/getPaymentSchedule application/json 71 - 200 - application/json;+charset=utf-8 45541.7192ms
+02/20/2022 17:45:31 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/20/2022 17:45:32 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/20/2022 17:45:32 +06:00[] -Message:Hosting environment: "Development"
+02/20/2022 17:45:32 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/20/2022 17:45:32 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/20/2022 17:45:32 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 246.4037ms
+02/20/2022 17:45:33 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/20/2022 17:45:33 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.5712ms
+02/20/2022 17:46:00 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/getPaymentSchedule application/json 70
+02/20/2022 17:46:01 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 17:46:01 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)"'
+02/20/2022 17:46:01 +06:00[] -Message:Route matched with "{action = \"GetPaymentSchedule\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentSchedule(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetScheduleRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 17:46:04 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 17:46:43 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 39599.2286ms.
+02/20/2022 17:46:43 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetScheduleResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 17:46:43 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)" in 42532.7076ms
+02/20/2022 17:46:43 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)"'
+02/20/2022 17:46:43 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/getPaymentSchedule application/json 70 - 200 - application/json;+charset=utf-8 43236.2773ms
+02/20/2022 17:46:52 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/getPaymentSchedule application/json 70
+02/20/2022 17:46:52 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/20/2022 17:46:52 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)"'
+02/20/2022 17:46:52 +06:00[] -Message:Route matched with "{action = \"GetPaymentSchedule\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentSchedule(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetScheduleRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/20/2022 17:46:53 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)" - Validation state: Valid
+02/20/2022 17:46:55 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1201.1474ms.
+02/20/2022 17:46:55 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.GetScheduleResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/20/2022 17:46:55 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)" in 2549.3614ms
+02/20/2022 17:46:55 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.GetPaymentSchedule (Bkash_Service_API)"'
+02/20/2022 17:46:55 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/getPaymentSchedule application/json 70 - 200 - application/json;+charset=utf-8 2595.6589ms

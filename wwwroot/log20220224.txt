@@ -1,0 +1,101 @@
+02/24/2022 12:27:30 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/24/2022 12:27:32 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/24/2022 12:27:32 +06:00[] -Message:Hosting environment: "Development"
+02/24/2022 12:27:32 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/24/2022 12:27:32 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/24/2022 12:27:33 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 428.2969ms
+02/24/2022 12:27:34 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/24/2022 12:27:34 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 183.4011ms
+02/24/2022 12:28:47 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=New-user-1 - -
+02/24/2022 12:28:48 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/24/2022 12:28:48 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:28:48 +06:00[] -Message:Route matched with "{action = \"CheckUserStatus\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUserStatus(System.String)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/24/2022 12:28:51 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" - Validation state: Valid
+02/24/2022 12:28:52 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:28:52 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:28:52 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:28:52 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/24/2022 12:28:54 +06:00[] -Message:Executed DbCommand ("119"ms) [Parameters=["@__userId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[UserId] AS [userId], [r].[subscriptionRequestId], [r].[subscriptionId], [r].[dueDate], [r].[nextPaymentDate], [c].[frequency], [r].[subscriptionStatus]
+FROM [CreateSubscriptionInitiate_Bkash] AS [c]
+INNER JOIN [RecurringWebhookNotification] AS [r] ON [c].[subscriptionRequestId] = [r].[subscriptionRequestId]
+WHERE ([c].[UserId] = @__userId_0) AND [c].[frequency] IN (N'WEEKLY', N'DAILY', N'MONTHLY')
+ORDER BY [r].[CreatedDate] DESC"
+02/24/2022 12:28:54 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2904.6433ms.
+02/24/2022 12:28:54 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.UserSubscriptionStatusDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/24/2022 12:28:54 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" in 5896.9586ms
+02/24/2022 12:28:54 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:28:54 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=New-user-1 - - - 200 - application/json;+charset=utf-8 6638.3029ms
+02/24/2022 12:29:46 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=b-3 - -
+02/24/2022 12:29:46 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/24/2022 12:29:46 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:29:46 +06:00[] -Message:Route matched with "{action = \"CheckUserStatus\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUserStatus(System.String)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/24/2022 12:29:48 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" - Validation state: Valid
+02/24/2022 12:29:48 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/24/2022 12:29:48 +06:00[] -Message:Executed DbCommand ("59"ms) [Parameters=["@__userId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[UserId] AS [userId], [r].[subscriptionRequestId], [r].[subscriptionId], [r].[dueDate], [r].[nextPaymentDate], [c].[frequency], [r].[subscriptionStatus]
+FROM [CreateSubscriptionInitiate_Bkash] AS [c]
+INNER JOIN [RecurringWebhookNotification] AS [r] ON [c].[subscriptionRequestId] = [r].[subscriptionRequestId]
+WHERE ([c].[UserId] = @__userId_0) AND [c].[frequency] IN (N'WEEKLY', N'DAILY', N'MONTHLY')
+ORDER BY [r].[CreatedDate] DESC"
+02/24/2022 12:29:48 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 323.074ms.
+02/24/2022 12:29:48 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.UserSubscriptionStatusDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/24/2022 12:29:48 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" in 1696.8194ms
+02/24/2022 12:29:48 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:29:48 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=b-3 - - - 200 - application/json;+charset=utf-8 1778.7840ms
+02/24/2022 12:31:58 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/24/2022 12:31:58 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/24/2022 12:31:58 +06:00[] -Message:Hosting environment: "Development"
+02/24/2022 12:31:58 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/24/2022 12:31:58 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/24/2022 12:31:59 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 192.9652ms
+02/24/2022 12:31:59 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/24/2022 12:31:59 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 223.0758ms
+02/24/2022 12:32:41 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=b-3 - -
+02/24/2022 12:32:42 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/24/2022 12:32:42 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:32:42 +06:00[] -Message:Route matched with "{action = \"CheckUserStatus\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUserStatus(System.String)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/24/2022 12:32:45 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" - Validation state: Valid
+02/24/2022 12:32:46 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:32:46 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:32:46 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:32:47 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/24/2022 12:32:48 +06:00[] -Message:Executed DbCommand ("129"ms) [Parameters=["@__userId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[UserId] AS [userId], [r].[subscriptionRequestId], [r].[subscriptionId], [r].[dueDate], [r].[nextPaymentDate], [c].[frequency], [r].[subscriptionStatus]
+FROM [CreateSubscriptionInitiate_Bkash] AS [c]
+INNER JOIN [RecurringWebhookNotification] AS [r] ON [c].[subscriptionRequestId] = [r].[subscriptionRequestId]
+WHERE ([c].[UserId] = @__userId_0) AND [c].[frequency] IN (N'WEEKLY', N'DAILY', N'MONTHLY')
+ORDER BY [r].[CreatedDate] DESC"
+02/24/2022 12:32:48 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2661.9618ms.
+02/24/2022 12:32:48 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.UserSubscriptionStatusDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/24/2022 12:32:48 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" in 5939.4345ms
+02/24/2022 12:32:48 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:32:48 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=b-3 - - - 200 - application/json;+charset=utf-8 6619.3119ms
+02/24/2022 12:33:36 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/24/2022 12:33:37 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/24/2022 12:33:37 +06:00[] -Message:Hosting environment: "Development"
+02/24/2022 12:33:37 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/24/2022 12:33:37 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/24/2022 12:33:37 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 216.2480ms
+02/24/2022 12:33:38 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/24/2022 12:33:38 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 206.5503ms
+02/24/2022 12:34:03 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=b-3 - -
+02/24/2022 12:34:04 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/24/2022 12:34:04 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:34:04 +06:00[] -Message:Route matched with "{action = \"CheckUserStatus\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUserStatus(System.String)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/24/2022 12:34:07 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" - Validation state: Valid
+02/24/2022 12:34:08 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:34:08 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:34:08 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/24/2022 12:34:08 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/24/2022 12:34:10 +06:00[] -Message:Executed DbCommand ("385"ms) [Parameters=["@__userId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[UserId] AS [userId], [r].[subscriptionRequestId], [r].[subscriptionId], [r].[dueDate], [r].[nextPaymentDate], [c].[frequency], [r].[subscriptionStatus]
+FROM [CreateSubscriptionInitiate_Bkash] AS [c]
+INNER JOIN [RecurringWebhookNotification] AS [r] ON [c].[subscriptionRequestId] = [r].[subscriptionRequestId]
+WHERE ([c].[UserId] = @__userId_0) AND [c].[frequency] IN (N'WEEKLY', N'DAILY', N'MONTHLY')
+ORDER BY [r].[CreatedDate] DESC"
+02/24/2022 12:34:10 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3426.072ms.
+02/24/2022 12:34:10 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.UserSubscriptionStatusDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/24/2022 12:34:10 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)" in 6088.1312ms
+02/24/2022 12:34:10 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CheckUserStatus (Bkash_Service_API)"'
+02/24/2022 12:34:10 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/api/v1/BkashRecurring/checkSubscriptionStatus?userId=b-3 - - - 200 - application/json;+charset=utf-8 6692.1199ms

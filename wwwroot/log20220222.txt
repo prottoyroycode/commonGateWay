@@ -1,0 +1,561 @@
+02/22/2022 11:42:50 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/22/2022 11:42:51 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/22/2022 11:42:51 +06:00[] -Message:Hosting environment: "Development"
+02/22/2022 11:42:51 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/22/2022 11:42:51 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/22/2022 11:42:51 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 273.5271ms
+02/22/2022 11:42:51 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/swagger-ui-standalone-preset.js - -
+02/22/2022 11:42:51 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/swagger-ui.css - -
+02/22/2022 11:42:51 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/swagger-ui-bundle.js - -
+02/22/2022 11:42:51 +06:00[] -Message:The file "/swagger-ui.css" was not modified
+02/22/2022 11:42:51 +06:00[] -Message:The file "/swagger-ui-bundle.js" was not modified
+02/22/2022 11:42:51 +06:00[] -Message:The file "/swagger-ui-standalone-preset.js" was not modified
+02/22/2022 11:42:51 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 52.5672ms
+02/22/2022 11:42:51 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/swagger-ui.css - - - 304 - text/css 52.6339ms
+02/22/2022 11:42:51 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 52.5124ms
+02/22/2022 11:42:52 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/22/2022 11:42:53 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 315.7740ms
+02/22/2022 11:42:54 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 11:42:58 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 11:42:58 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 11:42:58 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 11:42:58 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:43:17 +06:00[] -Message:An error occurred using the connection to database '"bkash-Service"' on server '"MASUM"'.
+02/22/2022 11:43:17 +06:00[] -Message:An exception occurred while iterating over the results of a query for context type '"Bkash_Service_API.Data.DataContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (1326): The user name or password is incorrect.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1326,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (1326): The user name or password is incorrect.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1326,State:0,Class:20
+02/22/2022 11:43:18 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:43:18 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:43:18 +06:00[] -Message:Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+02/22/2022 11:43:18 +06:00[] -Message:AuthenticationScheme: "BasicAuthentication" was challenged.
+02/22/2022 11:43:18 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 401 - - 24027.4991ms
+02/22/2022 11:44:38 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 11:44:38 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:44:55 +06:00[] -Message:An error occurred using the connection to database '"bkash-Service"' on server '"MASUM"'.
+02/22/2022 11:44:55 +06:00[] -Message:An exception occurred while iterating over the results of a query for context type '"Bkash_Service_API.Data.DataContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (1326): The user name or password is incorrect.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1326,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (1326): The user name or password is incorrect.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1326,State:0,Class:20
+02/22/2022 11:44:55 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:44:55 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:44:55 +06:00[] -Message:Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+02/22/2022 11:44:55 +06:00[] -Message:AuthenticationScheme: "BasicAuthentication" was challenged.
+02/22/2022 11:44:55 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 401 - - 17669.2677ms
+02/22/2022 11:45:48 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 11:45:48 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:46:06 +06:00[] -Message:An error occurred using the connection to database '"bkash-Service"' on server '"MASUM"'.
+02/22/2022 11:46:06 +06:00[] -Message:An exception occurred while iterating over the results of a query for context type '"Bkash_Service_API.Data.DataContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (1326): The user name or password is incorrect.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1326,State:0,Class:20"
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (1326): The user name or password is incorrect.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:1326,State:0,Class:20
+02/22/2022 11:46:06 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:46:06 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:46:06 +06:00[] -Message:Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+02/22/2022 11:46:06 +06:00[] -Message:AuthenticationScheme: "BasicAuthentication" was challenged.
+02/22/2022 11:46:06 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 401 - - 17669.8161ms
+02/22/2022 11:46:24 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 11:46:24 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:46:25 +06:00[] -Message:Executed DbCommand ("231"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 11:46:25 +06:00[] -Message:Authorization was successful.
+02/22/2022 11:46:25 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 11:46:25 +06:00[] -Message:Route matched with "{action = \"GetToken\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Bkash_Service_API.Dtos.ApplicationUserNameAndPassDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 11:46:28 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 11:46:37 +06:00[] -Message:Executed DbCommand ("16"ms) [Parameters=["@__applicationUser_ApiKey_0='?' (Size = 4000), @__applicationUser_ApiSecret_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[ApiKey] = @__applicationUser_ApiKey_0) AND ([a].[ApiSecret] = @__applicationUser_ApiSecret_1)"
+02/22/2022 11:46:38 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 10062.587ms.
+02/22/2022 11:46:38 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.CommonResponse"'.
+02/22/2022 11:46:38 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" in 12787.5758ms
+02/22/2022 11:46:38 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 11:46:38 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 200 - application/json;+charset=utf-8 13531.9454ms
+02/22/2022 11:47:13 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 117
+02/22/2022 11:47:13 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:47:13 +06:00[] -Message:Successfully validated the token.
+02/22/2022 11:47:13 +06:00[] -Message:Authorization was successful.
+02/22/2022 11:47:13 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)"'
+02/22/2022 11:47:13 +06:00[] -Message:Route matched with "{action = \"CreateSubscriptionInitiate\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateSubscriptionInitiate(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CreateSubscriptionInitiateBkashDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/22/2022 11:47:17 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 11:47:19 +06:00[] -Message:this is from CreateSubscriptionInitiate() 
+02/22/2022 11:48:13 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:48:14 +06:00[] -Message:Executed DbCommand ("49"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (DbType = Int32), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Int32), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p23='?' (Size = 4000), @p24='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CreateSubscriptionInitiate_Bkash] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [UserId], [amount], [amountQueryUrl], [client_UserID], [currency], [expiryDate], [firstPaymentAmount], [firstPaymentIncludedInCycle], [frequency], [maxCapAmount], [maxCapRequired], [merchantShortCode], [payer], [payerType], [paymentType], [redirectUrl], [serviceId], [startDate], [subscriptionReference], [subscriptionRequestId], [subscriptionType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24);"
+02/22/2022 11:48:14 +06:00[] -Message:payment has been initiated 
+02/22/2022 11:48:45 +06:00[] -Message:Start processing HTTP request "POST" https://gateway.sbrecurring.pay.bka.sh/gateway/api/subscription
+02/22/2022 11:48:45 +06:00[] -Message:Sending HTTP request "POST" https://gateway.sbrecurring.pay.bka.sh/gateway/api/subscription
+02/22/2022 11:48:45 +06:00[] -Message:Received HTTP response headers after 617.8245ms - 200
+02/22/2022 11:48:45 +06:00[] -Message:End processing HTTP request after 625.3916ms - 200
+02/22/2022 11:49:06 +06:00[] -Message:Executed DbCommand ("45"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Guid), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CreateSubscriptionResponse_Bkash] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [RequestID], [UserId], [client_RedirectURL], [client_UserID], [errorCode], [errorDescription], [expirationTime], [redirectURL], [reference], [subscriptionRequestId], [timeStamp])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+02/22/2022 11:49:35 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 138273.4332ms.
+02/22/2022 11:49:35 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CreateSubscriptionResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 11:49:35 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)" in 141920.3742ms
+02/22/2022 11:49:35 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)"'
+02/22/2022 11:49:35 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 117 - 200 - application/json;+charset=utf-8 142117.3638ms
+02/22/2022 11:52:26 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 117
+02/22/2022 11:52:26 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:52:26 +06:00[] -Message:Successfully validated the token.
+02/22/2022 11:52:26 +06:00[] -Message:Authorization was successful.
+02/22/2022 11:52:26 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)"'
+02/22/2022 11:52:26 +06:00[] -Message:Route matched with "{action = \"CreateSubscriptionInitiate\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateSubscriptionInitiate(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CreateSubscriptionInitiateBkashDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/22/2022 11:52:30 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 11:52:33 +06:00[] -Message:this is from CreateSubscriptionInitiate() 
+02/22/2022 11:53:12 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:53:12 +06:00[] -Message:Executed DbCommand ("40"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (DbType = Int32), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Int32), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p23='?' (Size = 4000), @p24='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CreateSubscriptionInitiate_Bkash] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [UserId], [amount], [amountQueryUrl], [client_UserID], [currency], [expiryDate], [firstPaymentAmount], [firstPaymentIncludedInCycle], [frequency], [maxCapAmount], [maxCapRequired], [merchantShortCode], [payer], [payerType], [paymentType], [redirectUrl], [serviceId], [startDate], [subscriptionReference], [subscriptionRequestId], [subscriptionType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24);"
+02/22/2022 11:53:12 +06:00[] -Message:payment has been initiated 
+02/22/2022 11:53:33 +06:00[] -Message:Start processing HTTP request "POST" https://gateway.sbrecurring.pay.bka.sh/gateway/api/subscription
+02/22/2022 11:53:33 +06:00[] -Message:Sending HTTP request "POST" https://gateway.sbrecurring.pay.bka.sh/gateway/api/subscription
+02/22/2022 11:53:33 +06:00[] -Message:Received HTTP response headers after 462.1389ms - 200
+02/22/2022 11:53:33 +06:00[] -Message:End processing HTTP request after 468.1595ms - 200
+02/22/2022 11:53:33 +06:00[] -Message:Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Guid), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CreateSubscriptionResponse_Bkash] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [RequestID], [UserId], [client_RedirectURL], [client_UserID], [errorCode], [errorDescription], [expirationTime], [redirectURL], [reference], [subscriptionRequestId], [timeStamp])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+02/22/2022 11:53:33 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 63261.7995ms.
+02/22/2022 11:53:33 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CreateSubscriptionResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 11:53:33 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)" in 67349.6396ms
+02/22/2022 11:53:33 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)"'
+02/22/2022 11:53:33 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 117 - 200 - application/json;+charset=utf-8 67452.1433ms
+02/22/2022 11:54:14 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 117
+02/22/2022 11:54:14 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 11:54:14 +06:00[] -Message:Successfully validated the token.
+02/22/2022 11:54:14 +06:00[] -Message:Authorization was successful.
+02/22/2022 11:54:14 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)"'
+02/22/2022 11:54:14 +06:00[] -Message:Route matched with "{action = \"CreateSubscriptionInitiate\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateSubscriptionInitiate(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CreateSubscriptionInitiateBkashDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/22/2022 11:54:16 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 11:54:19 +06:00[] -Message:this is from CreateSubscriptionInitiate() 
+02/22/2022 11:54:24 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 11:54:24 +06:00[] -Message:Executed DbCommand ("72"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (DbType = Int32), @p16='?' (Size = 4000), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (Size = 4000), @p20='?' (DbType = Int32), @p21='?' (Size = 4000), @p22='?' (Size = 4000), @p23='?' (Size = 4000), @p24='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CreateSubscriptionInitiate_Bkash] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [UserId], [amount], [amountQueryUrl], [client_UserID], [currency], [expiryDate], [firstPaymentAmount], [firstPaymentIncludedInCycle], [frequency], [maxCapAmount], [maxCapRequired], [merchantShortCode], [payer], [payerType], [paymentType], [redirectUrl], [serviceId], [startDate], [subscriptionReference], [subscriptionRequestId], [subscriptionType])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24);"
+02/22/2022 11:54:24 +06:00[] -Message:payment has been initiated 
+02/22/2022 11:54:34 +06:00[] -Message:Start processing HTTP request "POST" https://gateway.sbrecurring.pay.bka.sh/gateway/api/subscription
+02/22/2022 11:54:34 +06:00[] -Message:Sending HTTP request "POST" https://gateway.sbrecurring.pay.bka.sh/gateway/api/subscription
+02/22/2022 11:54:35 +06:00[] -Message:Received HTTP response headers after 549.0089ms - 200
+02/22/2022 11:54:35 +06:00[] -Message:End processing HTTP request after 549.4562ms - 200
+02/22/2022 11:56:46 +06:00[] -Message:Executed DbCommand ("54"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Guid), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [CreateSubscriptionResponse_Bkash] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [RequestID], [UserId], [client_RedirectURL], [client_UserID], [errorCode], [errorDescription], [expirationTime], [redirectURL], [reference], [subscriptionRequestId], [timeStamp])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+02/22/2022 11:56:50 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 153878.9299ms.
+02/22/2022 11:56:50 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CreateSubscriptionResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 11:56:50 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)" in 156353.2385ms
+02/22/2022 11:56:50 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CreateSubscriptionInitiate (Bkash_Service_API)"'
+02/22/2022 11:56:50 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 117 - 200 - application/json;+charset=utf-8 156423.4336ms
+02/22/2022 12:01:31 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/querySubscription application/json 31
+02/22/2022 12:01:31 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 12:01:31 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)"'
+02/22/2022 12:01:31 +06:00[] -Message:Route matched with "{action = \"QuerySubscriptionAndPaymentAfterCallBack\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] QuerySubscriptionAndPaymentAfterCallBack(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.QuerySubscriptionAndPaymentRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/22/2022 12:01:33 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 12:01:34 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 12:01:34 +06:00[] -Message:Executed DbCommand ("8"ms) [Parameters=["@__subscriptionRequestId_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [c].[Id], [c].[CreatedDate], [c].[IsActive], [c].[ModifiedDate], [c].[RequestID], [c].[UserId], [c].[client_RedirectURL], [c].[client_UserID], [c].[errorCode], [c].[errorDescription], [c].[expirationTime], [c].[redirectURL], [c].[reference], [c].[subscriptionRequestId], [c].[timeStamp]
+FROM [CreateSubscriptionResponse_Bkash] AS [c]
+WHERE [c].[reference] = @__subscriptionRequestId_0"
+02/22/2022 12:02:00 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 26542.2478ms.
+02/22/2022 12:02:00 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.BkashQuerySubscriptionAndPaymentDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 12:02:00 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)" in 29055.8392ms
+02/22/2022 12:02:00 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.QuerySubscriptionAndPaymentAfterCallBack (Bkash_Service_API)"'
+02/22/2022 12:02:00 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/querySubscription application/json 31 - 200 - application/json;+charset=utf-8 29113.5712ms
+02/22/2022 13:50:47 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/ApiTest/createUser application/json 112
+02/22/2022 13:50:47 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/22/2022 13:50:47 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)"'
+02/22/2022 13:50:47 +06:00[] -Message:Route matched with "{action = \"CreateUser\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(Bkash_Service_API.Dtos.ApplicationUserDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 13:50:48 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 13:50:50 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 13:50:50 +06:00[] -Message:Executed DbCommand ("9"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 13:50:50 +06:00[] -Message:Executed DbCommand ("5"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [ApplicationUser] ([Id], [ApiKey], [ApiSecret], [CreatedDate], [IsActive], [ModifiedDate], [Password], [Role], [UserId], [UserName], [client_UserID])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+02/22/2022 13:50:50 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2277.4346ms.
+02/22/2022 13:50:50 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Dtos.ApplicationUserDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 13:50:50 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)" in 3408.7213ms
+02/22/2022 13:50:50 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.CreateUser (Bkash_Service_API)"'
+02/22/2022 13:50:50 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/ApiTest/createUser application/json 112 - 200 - application/json;+charset=utf-8 3426.3900ms
+02/22/2022 16:29:38 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 16:29:38 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 16:29:39 +06:00[] -Message:Executed DbCommand ("13"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 16:29:39 +06:00[] -Message:Authorization was successful.
+02/22/2022 16:29:39 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 16:29:39 +06:00[] -Message:Route matched with "{action = \"GetToken\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Bkash_Service_API.Dtos.ApplicationUserNameAndPassDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 16:29:40 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 16:29:43 +06:00[] -Message:Executed DbCommand ("37"ms) [Parameters=["@__applicationUser_ApiKey_0='?' (Size = 4000), @__applicationUser_ApiSecret_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[ApiKey] = @__applicationUser_ApiKey_0) AND ([a].[ApiSecret] = @__applicationUser_ApiSecret_1)"
+02/22/2022 16:29:43 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3143.5631ms.
+02/22/2022 16:29:43 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.CommonResponse"'.
+02/22/2022 16:29:43 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" in 4378.8531ms
+02/22/2022 16:29:43 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 16:29:43 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 200 - application/json;+charset=utf-8 5177.3419ms
+02/22/2022 17:04:58 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 17:04:58 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 17:04:58 +06:00[] -Message:Executed DbCommand ("7"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 17:04:58 +06:00[] -Message:Authorization was successful.
+02/22/2022 17:04:58 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 17:04:58 +06:00[] -Message:Route matched with "{action = \"GetToken\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Bkash_Service_API.Dtos.ApplicationUserNameAndPassDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 17:04:59 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 17:05:01 +06:00[] -Message:Executed DbCommand ("4"ms) [Parameters=["@__applicationUser_ApiKey_0='?' (Size = 4000), @__applicationUser_ApiSecret_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[ApiKey] = @__applicationUser_ApiKey_0) AND ([a].[ApiSecret] = @__applicationUser_ApiSecret_1)"
+02/22/2022 17:05:01 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2660.8125ms.
+02/22/2022 17:05:01 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.CommonResponse"'.
+02/22/2022 17:05:01 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" in 3749.9946ms
+02/22/2022 17:05:01 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 17:05:01 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 200 - application/json;+charset=utf-8 3868.0034ms
+02/22/2022 17:06:18 +06:00[] -Message:Request starting HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/cancelSubscription application/json 23
+02/22/2022 17:06:18 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Missing Authorization Header"
+02/22/2022 17:06:18 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CancelSubscription (Bkash_Service_API)"'
+02/22/2022 17:06:18 +06:00[] -Message:Route matched with "{action = \"CancelSubscription\", controller = \"BkashRecurring\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CancelSubscription(Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CancelSubscriptionRequestDto)" on controller "Bkash_Service_API.Controllers.BkashRecurringController" ("Bkash_Service_API").
+02/22/2022 17:06:20 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BkashRecurringController.CancelSubscription (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 17:06:56 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BkashRecurringController.CancelSubscription (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 35758.4192ms.
+02/22/2022 17:06:56 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BkashRecurringReqAndResponse.CancelSubscriptionResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 17:06:56 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BkashRecurringController.CancelSubscription (Bkash_Service_API)" in 38053.4059ms
+02/22/2022 17:06:56 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BkashRecurringController.CancelSubscription (Bkash_Service_API)"'
+02/22/2022 17:06:56 +06:00[] -Message:Request finished HTTP/2 POST https://localhost:44306/api/v1/BkashRecurring/cancelSubscription application/json 23 - 200 - application/json;+charset=utf-8 38078.6838ms
+02/22/2022 17:10:27 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 120
+02/22/2022 17:10:27 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 17:10:27 +06:00[] -Message:Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+02/22/2022 17:10:27 +06:00[] -Message:"Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+02/22/2022 17:10:27 +06:00[] -Message:Authorization failed. "These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (FunBox_Recurring_Bkash)"
+02/22/2022 17:10:27 +06:00[] -Message:AuthenticationScheme: "Bearer" was challenged.
+02/22/2022 17:10:27 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BkashRecurring/initiateSubscription application/json 120 - 401 - - 93.3149ms
+02/22/2022 17:10:37 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64
+02/22/2022 17:10:37 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 17:10:37 +06:00[] -Message:Executed DbCommand ("31"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 17:10:37 +06:00[] -Message:Authorization was successful.
+02/22/2022 17:10:37 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 17:10:37 +06:00[] -Message:Route matched with "{action = \"GetToken\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Bkash_Service_API.Dtos.ApplicationUserNameAndPassDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 17:10:38 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 17:10:40 +06:00[] -Message:Executed DbCommand ("19"ms) [Parameters=["@__applicationUser_ApiKey_0='?' (Size = 4000), @__applicationUser_ApiSecret_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[ApiKey] = @__applicationUser_ApiKey_0) AND ([a].[ApiSecret] = @__applicationUser_ApiSecret_1)"
+02/22/2022 17:10:41 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2747.2382ms.
+02/22/2022 17:10:41 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.CommonResponse"'.
+02/22/2022 17:10:41 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" in 3892.9063ms
+02/22/2022 17:10:41 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 17:10:41 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 64 - 200 - application/json;+charset=utf-8 3997.7669ms
+02/22/2022 18:00:05 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/22/2022 18:00:05 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/22/2022 18:00:05 +06:00[] -Message:Hosting environment: "Development"
+02/22/2022 18:00:05 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/22/2022 18:00:05 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/22/2022 18:00:06 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 205.6457ms
+02/22/2022 18:00:06 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/22/2022 18:00:06 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.1549ms
+02/22/2022 18:00:16 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 71
+02/22/2022 18:00:18 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:00:18 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:00:18 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:00:18 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 18:00:19 +06:00[] -Message:Executed DbCommand ("145"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 18:00:19 +06:00[] -Message:Authorization was successful.
+02/22/2022 18:00:19 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 18:00:19 +06:00[] -Message:Route matched with "{action = \"GetToken\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Bkash_Service_API.Dtos.ApplicationUserNameAndPassDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 18:00:21 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 18:00:24 +06:00[] -Message:Executed DbCommand ("107"ms) [Parameters=["@__applicationUser_ApiKey_0='?' (Size = 4000), @__applicationUser_ApiSecret_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[ApiKey] = @__applicationUser_ApiKey_0) AND ([a].[ApiSecret] = @__applicationUser_ApiSecret_1)"
+02/22/2022 18:00:24 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3123.9839ms.
+02/22/2022 18:00:24 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.CommonResponse"'.
+02/22/2022 18:00:24 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" in 5295.2485ms
+02/22/2022 18:00:24 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 18:00:25 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 71 - 200 - application/json;+charset=utf-8 8813.8166ms
+02/22/2022 18:00:43 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BLCharge/otp-validation application/json 203
+02/22/2022 18:00:43 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 18:00:43 +06:00[] -Message:Successfully validated the token.
+02/22/2022 18:00:43 +06:00[] -Message:Authorization was successful.
+02/22/2022 18:00:43 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)"'
+02/22/2022 18:00:43 +06:00[] -Message:Route matched with "{action = \"OtpValidation\", controller = \"BLCharge\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OtpValidation(Bkash_Service_API.Models.Entities.BLTouchAndPlayRequestAndResponse.BLTouchAndPlayOtpValidationRequestDto)" on controller "Bkash_Service_API.Controllers.BLChargeController" ("Bkash_Service_API").
+02/22/2022 18:00:43 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 18:00:51 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 18:00:51 +06:00[] -Message:Executed DbCommand ("68"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BLTouchAndPlayOtpValidationRequest] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [UserId], [client_UserID], [company], [msisdn], [otp], [serviceId], [subGroupId], [subRoot])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);"
+02/22/2022 18:01:05 +06:00[] -Message:Start processing HTTP request "GET" http://27.131.15.18:900/api/BLService/validate/fb74e763-2b5f-40d1-bf32-08d9f5d80b7d/8801952018351/DCB_Non_Funbox_Games_Daily_Auto/DCB_Non_Funbox_Games/571286/DCB_Non_Funbox_Games_Daily_Auto
+02/22/2022 18:01:05 +06:00[] -Message:Sending HTTP request "GET" http://27.131.15.18:900/api/BLService/validate/fb74e763-2b5f-40d1-bf32-08d9f5d80b7d/8801952018351/DCB_Non_Funbox_Games_Daily_Auto/DCB_Non_Funbox_Games/571286/DCB_Non_Funbox_Games_Daily_Auto
+02/22/2022 18:01:16 +06:00[] -Message:Received HTTP response headers after 11030.4145ms - 200
+02/22/2022 18:01:16 +06:00[] -Message:End processing HTTP request after 11039.351ms - 200
+02/22/2022 18:02:05 +06:00[] -Message:Executed DbCommand ("31"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BLTouchAndPlayOtpValidationResponse] ([Id], [BLTouchAndPlayOtpvalidationRequestId], [CreatedAt], [CreatedDate], [IsActive], [ModifiedDate], [UpdatedAt], [UserId], [client_UserID], [message], [requestId], [responseString], [status], [user])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);"
+02/22/2022 18:02:05 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 82265.7835ms.
+02/22/2022 18:02:05 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BLTouchAndPlayRequestAndResponse.BLTouchAndPlayOtpResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 18:02:05 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)" in 82315.1106ms
+02/22/2022 18:02:05 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)"'
+02/22/2022 18:02:05 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BLCharge/otp-validation application/json 203 - 200 - application/json;+charset=utf-8 82533.0715ms
+02/22/2022 18:04:58 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/22/2022 18:04:59 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/22/2022 18:04:59 +06:00[] -Message:Hosting environment: "Development"
+02/22/2022 18:04:59 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/22/2022 18:04:59 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/22/2022 18:04:59 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 212.8640ms
+02/22/2022 18:04:59 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/22/2022 18:05:00 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 238.8907ms
+02/22/2022 18:05:33 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 71
+02/22/2022 18:05:34 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:05:34 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:05:34 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:05:35 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 18:05:36 +06:00[] -Message:Executed DbCommand ("178"ms) [Parameters=["@__password_0='?' (Size = 4000), @__userName_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[Password] = @__password_0) AND ([a].[UserName] = @__userName_1)"
+02/22/2022 18:05:36 +06:00[] -Message:Authorization was successful.
+02/22/2022 18:05:36 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 18:05:37 +06:00[] -Message:Route matched with "{action = \"GetToken\", controller = \"ApiTest\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetToken(Bkash_Service_API.Dtos.ApplicationUserNameAndPassDto)" on controller "Bkash_Service_API.Controllers.ApiTestController" ("Bkash_Service_API").
+02/22/2022 18:05:38 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 18:05:41 +06:00[] -Message:Executed DbCommand ("146"ms) [Parameters=["@__applicationUser_ApiKey_0='?' (Size = 4000), @__applicationUser_ApiSecret_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ApiKey], [a].[ApiSecret], [a].[CreatedDate], [a].[IsActive], [a].[ModifiedDate], [a].[Password], [a].[Role], [a].[UserId], [a].[UserName], [a].[client_UserID]
+FROM [ApplicationUser] AS [a]
+WHERE ([a].[ApiKey] = @__applicationUser_ApiKey_0) AND ([a].[ApiSecret] = @__applicationUser_ApiSecret_1)"
+02/22/2022 18:05:42 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3425.1972ms.
+02/22/2022 18:05:42 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.CommonResponse"'.
+02/22/2022 18:05:42 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)" in 5004.4321ms
+02/22/2022 18:05:42 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.ApiTestController.GetToken (Bkash_Service_API)"'
+02/22/2022 18:05:42 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/ApiTest/token application/json 71 - 200 - application/json;+charset=utf-8 9017.1023ms
+02/22/2022 18:06:07 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BLCharge/otp-validation application/json 203
+02/22/2022 18:06:07 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 18:06:07 +06:00[] -Message:Successfully validated the token.
+02/22/2022 18:06:07 +06:00[] -Message:Authorization was successful.
+02/22/2022 18:06:07 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)"'
+02/22/2022 18:06:07 +06:00[] -Message:Route matched with "{action = \"OtpValidation\", controller = \"BLCharge\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OtpValidation(Bkash_Service_API.Models.Entities.BLTouchAndPlayRequestAndResponse.BLTouchAndPlayOtpValidationRequestDto)" on controller "Bkash_Service_API.Controllers.BLChargeController" ("Bkash_Service_API").
+02/22/2022 18:06:07 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 18:06:09 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 18:06:09 +06:00[] -Message:Executed DbCommand ("83"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BLTouchAndPlayOtpValidationRequest] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [UserId], [client_UserID], [company], [msisdn], [otp], [serviceId], [subGroupId], [subRoot])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);"
+02/22/2022 18:06:10 +06:00[] -Message:Start processing HTTP request "GET" http://27.131.15.18:900/api/BLService/validate/fb74e763-2b5f-40d1-bf32-08d9f5d80b7d/8801952018351/DCB_Non_Funbox_Games_Daily_Auto/DCB_Non_Funbox_Games/571286/DCB_Non_Funbox_Games_Daily_Auto
+02/22/2022 18:06:10 +06:00[] -Message:Sending HTTP request "GET" http://27.131.15.18:900/api/BLService/validate/fb74e763-2b5f-40d1-bf32-08d9f5d80b7d/8801952018351/DCB_Non_Funbox_Games_Daily_Auto/DCB_Non_Funbox_Games/571286/DCB_Non_Funbox_Games_Daily_Auto
+02/22/2022 18:06:21 +06:00[] -Message:Received HTTP response headers after 10945.4761ms - 200
+02/22/2022 18:06:21 +06:00[] -Message:End processing HTTP request after 10954.9402ms - 200
+02/22/2022 18:06:21 +06:00[] -Message:Executed DbCommand ("51"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BLTouchAndPlayOtpValidationResponse] ([Id], [BLTouchAndPlayOtpvalidationRequestId], [CreatedAt], [CreatedDate], [IsActive], [ModifiedDate], [UpdatedAt], [UserId], [client_UserID], [message], [requestId], [responseString], [status], [user])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);"
+02/22/2022 18:06:21 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 13726.6393ms.
+02/22/2022 18:06:21 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BLTouchAndPlayRequestAndResponse.BLTouchAndPlayOtpResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 18:06:21 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)" in 13770.4158ms
+02/22/2022 18:06:21 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)"'
+02/22/2022 18:06:21 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BLCharge/otp-validation application/json 203 - 200 - application/json;+charset=utf-8 14005.4433ms
+02/22/2022 18:11:09 +06:00[] -Message:User profile is available. Using '"C:\Users\GakkUser\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+02/22/2022 18:11:09 +06:00[] -Message:Application started. Press Ctrl+C to shut down.
+02/22/2022 18:11:09 +06:00[] -Message:Hosting environment: "Development"
+02/22/2022 18:11:09 +06:00[] -Message:Content root path: "D:\prottoy\backup\Bkash_Service_API"
+02/22/2022 18:11:09 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/index.html - -
+02/22/2022 18:11:10 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/index.html - - - 200 - text/html;charset=utf-8 186.4283ms
+02/22/2022 18:11:10 +06:00[] -Message:Request starting HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - -
+02/22/2022 18:11:10 +06:00[] -Message:Request finished HTTP/2 GET https://localhost:44306/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.6344ms
+02/22/2022 18:11:17 +06:00[] -Message:Request starting HTTP/1.1 POST https://localhost:44306/api/v1/BLCharge/otp-validation application/json 203
+02/22/2022 18:11:17 +06:00[] -Message:"BasicAuthentication" was not authenticated. Failure message: "Invalid Authorization Header"
+02/22/2022 18:11:18 +06:00[] -Message:Successfully validated the token.
+02/22/2022 18:11:18 +06:00[] -Message:Authorization was successful.
+02/22/2022 18:11:18 +06:00[] -Message:Executing endpoint '"Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)"'
+02/22/2022 18:11:18 +06:00[] -Message:Route matched with "{action = \"OtpValidation\", controller = \"BLCharge\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] OtpValidation(Bkash_Service_API.Models.Entities.BLTouchAndPlayRequestAndResponse.BLTouchAndPlayOtpValidationRequestDto)" on controller "Bkash_Service_API.Controllers.BLChargeController" ("Bkash_Service_API").
+02/22/2022 18:11:18 +06:00[] -Message:Executing action method "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)" - Validation state: Valid
+02/22/2022 18:11:22 +06:00[] -Message:No type was specified for the decimal property '"ChargeBtdVatSd"' on entity type '"BLChargeGakkServiceDefination"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:11:22 +06:00[] -Message:No type was specified for the decimal property '"amount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:11:22 +06:00[] -Message:No type was specified for the decimal property '"refundedAmount"' on entity type '"RecurringWebhookNotification"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+02/22/2022 18:11:22 +06:00[] -Message:Entity Framework Core "5.0.0" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+02/22/2022 18:11:24 +06:00[] -Message:Executed DbCommand ("97"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BLTouchAndPlayOtpValidationRequest] ([Id], [CreatedDate], [IsActive], [ModifiedDate], [UserId], [client_UserID], [company], [msisdn], [otp], [serviceId], [subGroupId], [subRoot])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);"
+02/22/2022 18:11:24 +06:00[] -Message:Start processing HTTP request "GET" http://27.131.15.18:900/api/BLService/validate/fb74e763-2b5f-40d1-bf32-08d9f5d80b7d/8801952018351/DCB_Non_Funbox_Games_Daily_Auto/DCB_Non_Funbox_Games/571286/DCB_Non_Funbox_Games_Daily_Auto
+02/22/2022 18:11:24 +06:00[] -Message:Sending HTTP request "GET" http://27.131.15.18:900/api/BLService/validate/fb74e763-2b5f-40d1-bf32-08d9f5d80b7d/8801952018351/DCB_Non_Funbox_Games_Daily_Auto/DCB_Non_Funbox_Games/571286/DCB_Non_Funbox_Games_Daily_Auto
+02/22/2022 18:11:35 +06:00[] -Message:Received HTTP response headers after 10799.7151ms - 200
+02/22/2022 18:11:35 +06:00[] -Message:End processing HTTP request after 10809.786ms - 200
+02/22/2022 18:11:35 +06:00[] -Message:Executed DbCommand ("3"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [BLTouchAndPlayOtpValidationResponse] ([Id], [BLTouchAndPlayOtpvalidationRequestId], [CreatedAt], [CreatedDate], [IsActive], [ModifiedDate], [UpdatedAt], [UserId], [client_UserID], [message], [requestId], [responseString], [status], [user])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);"
+02/22/2022 18:11:35 +06:00[] -Message:Executed action method "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 16788.2026ms.
+02/22/2022 18:11:35 +06:00[] -Message:Executing "OkObjectResult", writing value of type '"Bkash_Service_API.Models.Response.ServiceResponse`1[[Bkash_Service_API.Models.Entities.BLTouchAndPlayRequestAndResponse.BLTouchAndPlayOtpResponseDto, Bkash_Service_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+02/22/2022 18:11:35 +06:00[] -Message:Executed action "Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)" in 16944.226ms
+02/22/2022 18:11:35 +06:00[] -Message:Executed endpoint '"Bkash_Service_API.Controllers.BLChargeController.OtpValidation (Bkash_Service_API)"'
+02/22/2022 18:11:35 +06:00[] -Message:Request finished HTTP/1.1 POST https://localhost:44306/api/v1/BLCharge/otp-validation application/json 203 - 200 - application/json;+charset=utf-8 18177.1347ms
